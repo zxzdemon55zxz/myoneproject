@@ -1,0 +1,322 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28.11.2017, 9:46:56
+    Author     : killer
+*/
+::-webkit-scrollbar{
+	width:6px;
+}
+
+::-webkit-scrollbar-thumb{
+	border-width:1px 1px 1px 2px;
+	border-color: #777;
+	background-color: #aaa;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	border-width: 1px 1px 1px 2px;
+	border-color: #7F7F7F;
+	background-color: #777;
+}
+
+::-webkit-scrollbar-track{
+	border-width:0;
+}
+
+::-webkit-scrollbar-track:hover{
+	border-left: solid 1px #aaa;
+	/*background-color: #A3A3A3;*/
+}
+
+@font-face {
+    font-family: headFont; /* имя шрифта для CSS правил */
+    src: url(../content/fonts/10943.otf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.block{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow-x: hidden;
+}
+
+.cb{
+    width: 100%;
+    height: 550px;
+    background: white;
+}
+
+.header{
+    height: 100%;
+    border-bottom: 3px #5d5d5d solid;
+    background: #000000;
+}
+
+.head-dinamic{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.mini-block{
+    width: 100px;
+    height: 100px;
+    background: #ffffff;
+    display: inline-block;
+    border: 1px #dcdcdc solid;
+    border-radius: 3px;
+    float: left;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.head-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*background: rgba(78, 78, 78, 0.13);*/
+    top: 0;
+    left: 0;
+}
+.head-T{
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.40);
+    top: 0;
+    font-family: headFont;
+    color: white;
+    font-size: 50px;
+    padding: 5px 0 0 20px;
+}
+.head-L{
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    height: 93%;    
+}
+
+.arrow{
+    width: 40%;
+    background: rgba(0, 0, 0, 0.40);
+    height: 120px;
+    margin-top: 25px;
+    position: relative;
+}
+
+.arrs{
+    width: 84px;
+    height: 84px;
+    background: #5d5d5d;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -42px;
+    top: 18px;
+}
+
+.aone{
+    width: 40%;
+}
+.atwo{
+    width: 35%;
+}
+.athree{
+    width: 30%;
+}
+.head-R{
+    position: absolute;
+    right: 0;
+    top: 115px;
+    width: 40%;
+    height: 80%;
+    background: rgba(0, 0, 0, 0.40);
+    border-radius: 15px 0 0 15px;
+    max-width: 500px;
+
+}
+.head-B{
+    position: absolute;
+    width: 50px;
+    height: 55px;
+    bottom: 12px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: rgba(0, 0, 0, 0.40);
+    border-radius: 7px;
+    cursor: pointer;
+    padding-top: 7px;
+}
+
+video { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    background: url(//demosthenes.info/assets/images/polina.jpg) no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+
+
+span
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+   
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 0 0 3px 6px;
+}
+
+.unu
+{
+  margin-top: 6px;
+}
+
+.unu, .doi, .trei
+{
+    margin: auto;
+    -webkit-animation: mouse-scroll 1s infinite;
+    -moz-animation: mouse-scroll 1s infinite;
+}
+
+.unu
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+}
+
+.doi
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+}
+
+.trei
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+}
+
+.mouse
+{
+    height: 21px;
+    width: 14px;
+    border-radius: 10px;
+    transform: none;
+    border: 2px solid white;
+    top: 170px;
+    margin: auto;
+}
+
+.wheel
+{
+  height: 5px;
+  width: 2px;
+  display: block;
+  margin: 5px auto;
+  background: white;
+  position: relative;
+}
+
+.wheel
+{
+  -webkit-animation: mouse-wheel 1.2s ease infinite;
+  -moz-animation: mouse-wheel 1.2s ease infinite;
+}
+
+@-webkit-keyframes mouse-wheel
+{
+   0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+
+@-moz-keyframes mouse-wheel
+{
+  0% { top: 1px; }
+  50% { top: 2px; }
+  100% { top: 3px;}
+}
+
+@-webkit-keyframes mouse-scroll {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+@-moz-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-scroll {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+
+
+.info{
+    background: #5d5d5d;
+}
+.info-block{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    background: #4c4c4c;
+    /* left: 50%; */
+    min-width: 850px;
+}
+.technologies{
+    background: #dedede;
+}
+.portfolio{
+    background: #5d5d5d;
+}
+.socials{
+    background: #dedede;
+}
+.bottom{
+    background: #5d5d5d;
+}

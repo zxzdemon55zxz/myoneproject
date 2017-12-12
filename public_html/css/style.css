@@ -45,8 +45,8 @@ and open the template in the editor.
 body{
     margin: 0;
     padding: 0;
+    cursor: url("../content/cursors/cur1054.cur"), auto;
 }
-
 
 .cb{
     width: 100%;
@@ -87,8 +87,8 @@ body{
 }
 .head-T{
     width: 100%;
-    height: 45px;
-    background: rgba(0, 0, 0, 0.40);
+    height: 85px;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
     top: 0;
     color: white;
 }
@@ -98,6 +98,7 @@ body{
     font-size: 28px;
     margin: 5px 0 0 5px;
     font-family: headFont;
+    margin-left: 15px;
 }
 .head-menu{
     float: right;
@@ -154,8 +155,17 @@ body{
     font-size: 30px;
     color: white;
     font-family: textFont;
-    padding-top: 22px;
+    padding-top: 12px;
 }
+
+.arrsp-min-text{
+    text-align: left;
+    padding-left: 35px;
+    font-size: 12px;
+    color: #c7c7c7;
+    font-family: textFont;
+}
+
 
 .aone{
     width: 40%;
@@ -191,6 +201,33 @@ body{
     padding-top: 7px;
 }
 
+.head-LB{
+    bottom: 35px;
+    left: 35px;
+    position: absolute;
+}
+
+.tic-point{
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    margin-left: 2px;
+    border-radius: 4px;
+    display: inline-block;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    cursor: url("../content/cursors/cur1051.cur"), auto;
+}
+
+.tic-point:hover{
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.tic-active{
+    
+    background: rgba(255, 255, 255, 0.9);
+}
+
 video { 
     position: absolute;
     top: 50%;
@@ -214,8 +251,8 @@ span
   display: block;
   width: 5px;
   height: 5px;
-  -ms-transform: rotate(45deg);  IE 9 
-  -webkit-transform: rotate(45deg);  Chrome, Safari, Opera 
+  -ms-transform: rotate(45deg);  
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
    
   border-right: 2px solid white;
@@ -394,4 +431,73 @@ footer,
   -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
      -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
       transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+.hero-statik{
+    float: left;
+    display: inline-block;
+    font-size: 40px;
+}
+.hero-text {
+  position: relative;
+  font-size: 40px;
+      float: left;
+}
+
+.text {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 300;
+     margin: 0;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.typed-cursor{
+        display: inline;
+}
+
+
+
+.slider {
+width: 100%;
+    height: 100%;
+}
+
+.slide_viewer {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide_group {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  display: none;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.slide:first-child {
+  display: block;
+}
+
+.slide:nth-of-type(1) {
+  background: #D7A151;
+}
+
+.slide:nth-of-type(2) {
+  background: #F4E4CD;
+}
+
+.slide:nth-of-type(3) {
+  background: #C75534;
+}
+
+.slide:nth-of-type(4) {
+  background: #D1D1D4;
 }

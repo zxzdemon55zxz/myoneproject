@@ -75,7 +75,7 @@ $(window).load(function(){
 
 $(window).ready(function(){
         $(".text").typed({
-            strings: [" WEB DEVELOPER", " WEB DESIGNER", " COFFEE DRINKER", " VODKA DRINKER"],
+            strings: [" Dima", " Sania", " Vitalik"],
             typeSpeed: 50,
             backSpeed: 20,
             backDelay: 4999,

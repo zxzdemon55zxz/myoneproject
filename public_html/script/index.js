@@ -84,7 +84,7 @@ $(window).load(function(){
 
 $(window).ready(function(){
     $("#new").click(function(){
-        window.open('/index2.html');
+        window.open('http://18.219.158.117/index2.html');
     });
         
     

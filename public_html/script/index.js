@@ -73,8 +73,42 @@ $(window).load(function(){
     };
 });
 
+
+
+
+
+
+
+
+
+
 $(window).ready(function(){
-        $(".text").typed({
+    $("#new").click(function(){
+        window.open('/index2.html');
+    });
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    $(".text").typed({
             strings: [" Dima", " Sania", " Vitalik"],
             typeSpeed: 50,
             backSpeed: 20,

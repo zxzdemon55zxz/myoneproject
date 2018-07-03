@@ -109,7 +109,7 @@ $(window).ready(function(){
     
     
     $(".text").typed({
-            strings: [" Dima", " Sania", " Vitalik"],
+            strings: ["Dima-Repjah"," Olia-Dilna ","Nadia-Dilna"],
             typeSpeed: 50,
             backSpeed: 20,
             backDelay: 4999,

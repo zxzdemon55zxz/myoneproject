@@ -125,15 +125,15 @@ body{
     position: absolute;
     left: 0;
     top: 80px;
-    width: 100%;
+    width: 200%;
     height: 93%;    
 }
 
 .arrow{
-    width: 40%;
+    width:40%;
     background: rgba(0, 0, 0, 0.40);
     height: 80px;
-    margin-top: 25px;
+    margin-top: 20px;
     position: relative;
     border-bottom: 2px solid #5d5d5d;
     display: none;
@@ -142,7 +142,7 @@ body{
 .arrs{
     width: 58px;
     height: 58px;
-    background: #5d5d5d;
+    background: #de9933;
     transform: rotate(45deg);
     position: absolute;
     right: -29px;
